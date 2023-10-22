@@ -1,0 +1,838 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* NEVIGATION BAR */
+
+.firstNav {
+    width: 100%;
+    height: 8%;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Montserrat';
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 1vmax;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(203, 200, 200);
+}
+
+.firstNav h1 {
+    font-size: 2.2vmax;
+    font-weight: 700;
+}
+
+.firstNav-nav {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1vmax;
+    font-family: 'Montserrat';
+    padding-right: 1vmax;
+}
+
+.firstNav-nav a {
+    text-decoration: none;
+    font-weight: 800;
+    color: white;
+    font-size: 1.1vmax;
+}
+
+
+/* NAVIGATION BAR MOBILE CODE */
+
+@media (max-width:700px) {
+    .firstNav {
+        height: 6%;
+    }
+
+    .firstNav-nav a {
+        font-size: 1.5vmax;
+    }
+
+    .firstNav h1 {
+        margin-top: 2.5%;
+        font-size: 2.5vmax;
+    }
+
+
+}
+
+/* MENU LIST  */
+
+
+.menulist {
+    font-family: 'Montserrat';
+    position: absolute;
+    right: 0%;
+    width: 30%;
+    height: 0%;
+    background-color: black;
+    text-align: center;
+    transition: 1s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 123;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    /* border-bottom: 1px solid white; */
+}
+
+.menulist a {
+    font-size: 0.9vmax;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-weight: 600;
+}
+
+.material-symbols-outlined {
+    color: white;
+}
+
+.allLinks:hover {
+    color: orange;
+}
+
+
+/* MENULIST MOBILE CODE */
+
+
+@media (max-width:700px) {
+    .menulist {
+        width: 70%;
+    }
+
+    .menulist a {
+        font-size: 1.2vmax;
+    }
+}
+
+
+/* FIRST PAGE  */
+
+
+.firstPage {
+    background-image: url(https://images.unsplash.com/photo-1601242315544-7de7baf095ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+
+/* FIRST PAGE SLIDER */
+
+
+.carousel-inner {
+    border: 10px double white;
+}
+
+/* SLIDER MOBILE CODE */
+
+@media (max-width:700px) {
+    #carousel {
+        width: 100%;
+        height: 70%;
+    }
+
+}
+
+
+/* SELECTION PAGE */
+
+.Selection {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Selection .Female h1 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.586);
+
+}
+
+.Selection .Male h1 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.586);
+
+}
+
+.Selection a {
+    text-decoration: none;
+}
+
+.Male {
+    width: 40%;
+    height: 90%;
+    background-image: url(https://www.newsilike.in/wp-content/uploads/Best-Cologne-Spray-for-Men.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Female {
+    width: 40%;
+    height: 90%;
+    background-image: url(https://media.istockphoto.com/id/1376552130/photo/studio-shot-of-a-young-woman-spraying-herself-with-perfume.jpg?s=612x612&w=0&k=20&c=q91cciLSUxLqFnc827B0i0pIki7zpU9WKWCtZ9bElR4=);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* SECTION PAGE MOBILE CODE */
+
+
+@media (max-width:700px) {
+    .Selection a h1 {
+        font-size: 1.6vmax;
+    }
+
+    .Male {
+        background-size: contain;
+        background-position: left;
+    }
+
+    .Female {
+        background-size: contain;
+        background-position: left;
+    }
+
+    .Selection {
+        height: 20%;
+        background-image: linear-gradient(to bottom right, #d78cc7, #b9ad0eb5, #520A0E);
+    }
+}
+
+/* Second Page  */
+
+
+.secondPage {
+    width: 100%;
+    height: 90%;
+    padding: 2% 4%;
+    text-align: center;
+    border-bottom: 3px solid gray;
+    border-top: 1px solid gray;
+}
+
+.secondPageHeading h1 {
+    font-size: 2.5vmax;
+}
+
+.secondPageHeading h4 {
+    font-size: 2.2vmax;
+}
+
+.secondPageBox {
+    width: 100%;
+    height: 80%;
+    padding: 1%;
+    display: flex;
+}
+
+.secondPagePara {
+    width: 50%;
+}
+
+.secondPagePara p {
+    font-size: 1.1vmax;
+}
+
+.secondPageImg {
+    width: 50%;
+    height: 100%;
+    background-image: url(assets/pngwing.com\ \(5\).png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* SECOND PAGE MOBILE CODE */
+@media (max-width: 700px) {
+
+    .secondPage {
+        height: 50%;
+        /* background-image: url(assets/pngwing.com\ \(5\).png); */
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.638);
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;  
+
+    }
+
+    .secondPage::-webkit-scrollbar{
+        display: none;
+      } 
+    .secondPageImg {
+        display: none;
+    }
+
+    .secondPagePara {
+        width: 100%;
+
+    }
+
+    .secondPagePara p {
+        font-size: 2.2vmax;
+        color: #ffffff;
+        padding: 2%;
+        /* background-color: rgba(0, 0, 0, 0.307); */
+        font-weight: 500;
+    }
+
+    .secondPageHeading h1 {
+        font-size: 4vmax;
+        color: white;
+    }
+    
+    .secondPageHeading h4 {
+        font-size: 3vmax;
+        color: white;
+    }
+}
+
+
+/* BEST OFFERS */
+
+.BestOffers {
+    color: #ff8a33;
+    animation: example 5s infinite;
+}
+@media (max-width: 600px) {
+    .BestOffers{
+        display: none;
+    }
+    .itemCard{
+        padding: 0%;
+    }
+}
+
+.card {
+    width: 30rem;
+    height: 20rem;
+    margin-bottom: 2rem;
+    transition: .5s;
+    margin-right: 10px;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card:hover span {
+    display: none;
+}
+
+.card:hover h6 {
+    display: none;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 10px rgb(76, 76, 76);
+}
+
+.card-body h6 {
+    margin-top: -1vmax;
+    font-size: 1vmax;
+    color: black;
+    font-weight: 600;
+    margin-bottom: -.4vmax;
+}
+
+.card-body span {
+    font-size: .8vmax;
+    font-weight: 500;
+}
+
+.card-body p {
+    margin-top: -.5vmax;
+    font-weight: 700;
+    font-size: 1.3vmax;
+    color: #ff8a33;
+    margin-bottom: 0;
+}
+
+.card-body button {
+    display: none;
+}
+
+.card:hover button {
+    display: initial;
+    transform: translateY(-10px);
+}
+
+.card:hover p {
+    font-size: 1.5vmax;
+    transform: translateY(-8px);
+    color: orange;
+}
+
+.card {
+    background-image: url(assets/pngwing.com\ \(2\).png);
+    background-size: cover;
+    background-position: bottom;
+}
+
+
+@media (max-width: 700px) {
+    #cardH1 {
+        font-size: 12px;
+        margin-top: -20px;
+    }
+
+    #serialcode {
+        display: none;
+    }
+
+    #cardPrice {
+        font-size: 15px;
+    }
+
+}
+
+/* BEST OFFER MOBILE CODE */
+
+
+@keyframes example {
+    0% {
+        transform: translateX(0px);
+    }
+
+    25% {
+        transform: translateX(10px);
+    }
+
+    50% {
+        transform: translateX(-10px);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+.BestOffers:hover {
+    color: black;
+    animation: none;
+}
+
+
+
+
+/* THIRD PAGE */
+
+
+.thirdPage {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20%;
+    text-align: center;
+    background-attachment: fixed;
+    background-image: url(assets/hanna-morris-Eu_jjK6Z67Q-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.thirdPage h1 {
+    font-size: 3vmax;
+    color: white;
+}
+
+.thirdPage p {
+    color: white;
+    font-size: 1.2vmax;
+}
+
+.thirdPage button {
+    padding: .5vmax 1.5vmax;
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+    border-radius: 30px;
+    font-size: 1vmax;
+}
+
+.thirdPage button:hover {
+    transform: scale(.9);
+}
+
+
+
+/* Switch Page */
+
+.switch {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.switchImg {
+    width: 30%;
+    height: 90%;
+    display: flex;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+#switchImage1 {
+    width: 100%;
+    height: 100%;
+}
+
+#switchImage2 {
+    width: 100%;
+    height: 100%;
+
+}
+
+.switchText {
+    width: 45%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.switchText h2 {
+    width: 70%;
+    font-size: 2vmax;
+    font-weight: 600;
+    margin-bottom: 6%;
+}
+
+.switchText p {
+    width: 50%;
+    font-size: 1.2vmax;
+    font-weight: 400;
+}
+
+.circleBox {
+    width: 10%;
+    height: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circleout {
+    width: 45%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circlein1 {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+.circlein2 {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    /* background-color: black; */
+}
+
+
+/* SWITCH MOBILE CODE */
+
+
+@media (max-width: 700px) {
+
+    .switch {
+        height: 45%;
+        background-image: url(https://i0.wp.com/www.beautythatwalks.com/wp-content/uploads/2018/08/accessories-body-bottle-compressor.jpg?fit=1502%2C2048&ssl=1);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 2%;
+    }
+
+    .switchImg {
+        display: none;
+    }
+
+    .switchText {
+        width: 100%;
+    }
+
+    .switchText h2 {
+        width: 100%;
+        font-size: 3.5vmax;
+        background-color: #ffffff55;
+    }
+
+    .switchText p {
+        width: 80%;
+        background-color: #ffffff55;
+        font-size: 1.6vmax;
+        font-weight: 600;
+    }
+}
+
+
+/* ******* COPYRIGHT ********** */
+
+#copyright {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    font-family: montserrat;
+    border-bottom: 1px solid gray;
+}
+
+#copyright p {
+    color: #fff;
+    font-weight: 600;
+}
+
+#copyright a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+
+#copyright a:hover {
+    color: #ff8a33;
+}
+
+.copyrightleft {
+    width: 50%;
+    height: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2%;
+    justify-content: space-around;
+}
+
+.copyrightright {
+    width: 50%;
+    height: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 2%;
+    padding-bottom: 14%;
+}
+
+
+footer .input-group div button:hover {
+    background-color: #ff8a33;
+}
+
+
+/* ***********FOLLOW US ************** */
+
+
+#followUs {
+    width: 100%;
+    height: 20vh;
+    background-color: #000000;
+    color: #fff;
+    font-family: montserrat;
+    text-align: center;
+    padding: 2%;
+}
+
+#followUs p {
+    margin-bottom: 20px;
+}
+
+#followUs .ri-instagram-line,
+.ri-facebook-fill,
+.ri-whatsapp-line {
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+#followUs .ri-instagram-line:hover,
+.ri-facebook-fill:hover,
+.ri-whatsapp-line:hover {
+    color: #ff8a33;
+}
+
+
+@media (max-width:700px) {
+    .input-group h3 {
+        padding: 2%;
+    }
+
+}
+
+/* PRODUCT AND MALE CARDS */
+
+.products {
+    padding-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 22rem;
+    height: 20rem;
+    margin-bottom: 2rem;
+    transition: .5s;
+}
+
+
+
+/* LOGIN PAGE */
+
+.loginPage {
+    width: 60%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 234;
+    display: flex;
+}
+
+.loginImg {
+    width: 50%;
+    height: 100%;
+    background-image: url(https://etimg.etb2bimg.com/photo/89560144.cms);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.loginContent {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background-color: #fff;
+    padding: 7% 2%;
+    border: 2px solid black;
+}
+
+.cross {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* background-color: #fff; */
+    padding: 1%;
+    border: 1px solid black;
+}
+
+.loginContent h4 {
+    margin-bottom: 2vmax;
+}
+
+.loginContent input {
+    margin-bottom: 1vmax;
+    width: 80%;
+    padding: 5px 20px;
+    outline: none;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+.loginContent button {
+    font-size: .9vmax;
+    width: 50%;
+    padding: .5vmax;
+}
+
+@media (max-width:700px) {
+    .loginPage {
+        width: 70%;
+    }
+
+    .loginImg {
+        display: none;
+    }
+
+    .loginContent {
+        width: 100%;
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .cross {
+        padding: 1% 2%;
+    }
+
+    .loginContent p {
+        font-size: 1.3vmax;
+    }
+
+    .loginContent input {
+        font-size: 1.5vmax;
+    }
+
+    .loginContent h4 {
+        margin-bottom: 1vmax;
+    }
+}
+
+marquee {
+    background-color: #d78cc7a3;
+    padding: .8%;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    font-weight: 500;
+    font-size: 1.3vmax;
+    color: #000000;
+}
